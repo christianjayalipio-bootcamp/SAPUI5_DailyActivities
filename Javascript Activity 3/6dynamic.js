@@ -10,7 +10,7 @@ var record = [
     {
         "Name": "Patrick",
         "Age": 22,
-        "SkillSet": [ // fixed spelling here
+        "SkillSet": [
             { "Skill": "SAP UI5" },
             { "Skill": "SAP HANA" },
             { "Skill": "SAP ABAP" }
@@ -33,7 +33,7 @@ for (let i = 0; i < record.length; i++) {
 
     if (currentSkills > maxSkills) {
         maxSkills = currentSkills;
-        topPerson = record[i]; // fixed typo here
+        topPerson = record[i];
     }
 }
 
