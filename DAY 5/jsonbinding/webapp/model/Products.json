@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "ProductID": "S005",
+      "ProductName": "iPhone 16 vPlus 128GB Black",
+      "SupplierID": "apple",
+      "CategoryID": "iphone",
+      "QuantityPerUnit": "128",
+      "UnitPrice": 62290,
+      "UnitsInStock": 128,
+      "UnitsOnOrder": 0,
+      "ReorderLevel": 0,
+      "Discontinued": false
+    }
+  ]
+}
