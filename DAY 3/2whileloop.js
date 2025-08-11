@@ -7,14 +7,12 @@ while (row < height) {
     var spaceCount = row;
     var starCount = height - row;
 
-    // Add spaces
     var i = 0;
     while (i < spaceCount) {
         spaces += " ";
         i++;
     }
 
-    // Add stars
     var j = 0;
     while (j < starCount) {
         stars += "*";
