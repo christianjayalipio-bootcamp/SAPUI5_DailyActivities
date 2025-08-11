@@ -10,7 +10,6 @@ if (number < 1 || number > 999) {
     let ones = number % 10;
     let remainder = number % 100;
 
-    // Hundreds place
     switch (hundreds) {
         case 1: result += "One Hundred"; break;
         case 2: result += "Two Hundred"; break;
@@ -23,7 +22,6 @@ if (number < 1 || number > 999) {
         case 9: result += "Nine Hundred"; break;
     }
 
-    // Tens and Ones
     if (remainder > 0) {
         if (result !== "") result += " ";
 
@@ -41,7 +39,6 @@ if (number < 1 || number > 999) {
                 case 19: result += "Nineteen"; break;
             }
         } else {
-            // Tens
             switch (tens) {
                 case 2: result += "Twenty"; break;
                 case 3: result += "Thirty"; break;
@@ -53,10 +50,8 @@ if (number < 1 || number > 999) {
                 case 9: result += "Ninety"; break;
             }
 
-            // Add space if both tens and ones exist
             if (tens && ones) result += " ";
 
-            // Ones
             switch (ones) {
                 case 1: result += "One"; break;
                 case 2: result += "Two"; break;
