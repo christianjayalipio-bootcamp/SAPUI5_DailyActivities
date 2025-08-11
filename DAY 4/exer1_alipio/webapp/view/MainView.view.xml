@@ -93,7 +93,7 @@
                         />
                         <Label 
                             id="idLblCC"
-                            text="Credit Card Details"
+                            text="{i18n>ccdetailsLbl}"
                             visible="false"
                         />
                         <Input 
