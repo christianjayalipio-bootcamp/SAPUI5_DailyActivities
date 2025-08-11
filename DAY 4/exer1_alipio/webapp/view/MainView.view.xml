@@ -9,6 +9,7 @@
     <Page
         id="page"
         title="{i18n>title}"
+        floatingFooter="true"
     >
         <content>
             <VBox
@@ -87,6 +88,16 @@
                         />
                         <Input
                             id="idInputPhone"
+                            value=""
+                            visible="false"
+                        />
+                        <Label 
+                            id="idLblCC"
+                            text="Credit Card Details"
+                            visible="false"
+                        />
+                        <Input 
+                            id="idInputCC"
                             value=""
                             visible="false"
                         />

@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
     "use strict";
 
-    return Controller.extend("your.namespace.controller.ViewName", {
+    return Controller.extend("com.exer1_alipio.controller.ViewName", {
         
         onInit: function () {
         },
@@ -22,13 +22,26 @@ sap.ui.define([
 
             var oMobileLabel = this.getView().byId("idLblPhone");
             var oMobileInput = this.getView().byId("idInputPhone");
+            var oCCLabel = this.getView().byId("idLblCC");
+            var oCCInput = this.getView().byId("idInputCC");
+
+            oMobileLabel.setVisible(false);
+            oMobileInput.setVisible(false);
+            oCCLabel.setVisible(false);
+            oCCInput.setVisible(false);
 
             if (sSelectedKey === "GCASH") {
+                MessageToast.show("GCASH");
                 oMobileLabel.setVisible(true);
                 oMobileInput.setVisible(true);
-            } else {
-                oMobileLabel.setVisible(false);
-                oMobileInput.setVisible(false);
+                
+            } else if (sSelectedKey === "CC") {
+                MessageToast.show("Credit Card");
+                oCCLabel.setVisible(true);
+                oCCInput.setVisible(true);
+            }
+            else {
+                MessageToast.show("Cash on Delivery");
             }
         },
 
