@@ -1,16 +1,76 @@
 {
-  "products": [
-    {
-      "ProductID": "S005",
-      "ProductName": "iPhone 16 vPlus 128GB Black",
-      "SupplierID": "apple",
-      "CategoryID": "iphone",
-      "QuantityPerUnit": "128",
-      "UnitPrice": 62290,
-      "UnitsInStock": 128,
-      "UnitsOnOrder": 0,
-      "ReorderLevel": 0,
-      "Discontinued": false
-    }
-  ]
+    "products": [
+        {
+            "ProductID": "S005",
+            "ProductName": "iPhone 16 vPlus 128GB Black",
+            "SupplierID": "apple",
+            "CategoryID": "iphone",
+            "QuantityPerUnit": "128",
+            "UnitPrice": 62290,
+            "UnitsInStock": 128,
+            "UnitsOnOrder": 0,
+            "ReorderLevel": 0,
+            "Discontinued": false
+        },
+        {
+            "ProductID": "A001",
+            "ProductName": "Samsung Galaxy S25 Ultra",
+            "SupplierID": "samsung",
+            "CategoryID": "smartphone",
+            "QuantityPerUnit": "256",
+            "UnitPrice": 75000,
+            "UnitsInStock": 85,
+            "UnitsOnOrder": 20,
+            "ReorderLevel": 10,
+            "Discontinued": false
+        },
+        {
+            "ProductID": "C003",
+            "ProductName": "Sony WH-1000XM6 Headphones",
+            "SupplierID": "sony",
+            "CategoryID": "audio",
+            "QuantityPerUnit": "1 pc",
+            "UnitPrice": 19500,
+            "UnitsInStock": 250,
+            "UnitsOnOrder": 50,
+            "ReorderLevel": 30,
+            "Discontinued": false
+        },
+        {
+            "ProductID": "D007",
+            "ProductName": "Dell XPS 15 Laptop",
+            "SupplierID": "dell",
+            "CategoryID": "laptop",
+            "QuantityPerUnit": "1 pc",
+            "UnitPrice": 110000,
+            "UnitsInStock": 50,
+            "UnitsOnOrder": 0,
+            "ReorderLevel": 5,
+            "Discontinued": false
+        },
+        {
+            "ProductID": "E012",
+            "ProductName": "Logitech MX Master 4 Mouse",
+            "SupplierID": "logitech",
+            "CategoryID": "peripherals",
+            "QuantityPerUnit": "1 pc",
+            "UnitPrice": 7800,
+            "UnitsInStock": 300,
+            "UnitsOnOrder": 100,
+            "ReorderLevel": 50,
+            "Discontinued": false
+        },
+        {
+            "ProductID": "F009",
+            "ProductName": "GoPro Hero 14",
+            "SupplierID": "gopro",
+            "CategoryID": "camera",
+            "QuantityPerUnit": "1 pc",
+            "UnitPrice": 32000,
+            "UnitsInStock": 75,
+            "UnitsOnOrder": 15,
+            "ReorderLevel": 10,
+            "Discontinued": true
+        }
+    ]
 }
