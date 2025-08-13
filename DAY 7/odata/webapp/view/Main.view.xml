@@ -1,6 +1,66 @@
-<mvc:View controllerName="sapips.training.odata.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+<mvc:View
+	controllerName="sapips.training.odata.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+>
+	<Page
+		id="page"
+		title="{i18n>appTitle}"
+	>
+		<content>
+			<Table
+				id="idProductsTable"
+				items="{
+					path: '/Products',
+					sorter: {
+						path: 'ProductName',
+						descending: false
+					},
+					filters: [
+						{
+							path: 'Discontinued',
+							operator: 'EQ',
+							value1: false
+						}
+					]
+				}"
+			>
+				<headerToolbar>
+					<Toolbar id="idHeaderToolbar">
+						<VBox id="idHeaderVBox">
+							<Title id="idTitleProducts" text="{i18n>productsTitle}" level="H2" />
+							<ToolbarSpacer id="idToolbarSpacer" />
+							<Text id="idTextSubtitle" text="{i18n>productsSubtitle}" />
+						</VBox>
+					</Toolbar>
+				</headerToolbar>
+
+				<columns>
+					<Column id="idColProduct">
+						<Text id="idTextColProduct" text="{i18n>colProduct}" />
+					</Column>
+					<Column id="idColSupplierID">
+						<Text id="idTextColSupplierID" text="{i18n>colSupplierID}" />
+					</Column>
+					<Column id="idColPrice" hAlign="Right">
+						<Text id="idTextColPrice" text="{i18n>colPrice}" />
+					</Column>
+				</columns>
+
+				<items>
+					<ColumnListItem id="idRowTemplate">
+						<cells>
+							<Text id="idTextProductName" text="{ProductName}" />
+							<Text id="idTextSupplierIDValue" text="{SupplierID}" />
+							<ObjectNumber
+								id="idObjNumberPrice"
+								number="{UnitPrice}"
+								unit="{QuantityPerUnit}"
+							/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
 </mvc:View>
