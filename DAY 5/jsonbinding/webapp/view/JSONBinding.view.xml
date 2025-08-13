@@ -55,10 +55,8 @@
                                 { path: '/CurrencyCode' }
                             ], 
                             type: 'sap.ui.model.type.Currency', 
-                            formatOptions: { showMeasure: false }
-                        }"
-                        description="{/CurrencyCode}"
-                        type="Number"/>
+                            formatOptions: { showMeasure: false }}"
+                        />
                 </form:content>
             </form:SimpleForm>
         </Panel>
