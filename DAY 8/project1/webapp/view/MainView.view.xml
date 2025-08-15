@@ -2,5 +2,15 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <footer>
+            <Bar>
+                <contentLeft>
+                    <Button text="Button 1" press="onButton1Press" />
+                </contentLeft>
+                <contentRight>
+                    <Button text="Button 2" press="onNavPress" />
+                </contentRight>
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="com.ui5.trng.project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page1"
+        title="{i18n>title}"
+    >
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        text="Back"
+                        press="onNavBack"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
