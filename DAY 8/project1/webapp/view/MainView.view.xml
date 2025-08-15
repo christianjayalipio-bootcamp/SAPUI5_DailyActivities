@@ -5,10 +5,10 @@
         <footer>
             <Bar>
                 <contentLeft>
-                    <Button text="Button 1" press="onButton1Press" />
+                    <Button icon="sap-icon://message-popup" text="Message" press="onButton1Press"  />
                 </contentLeft>
                 <contentRight>
-                    <Button text="Button 2" press="onNavPress" />
+                    <Button icon="sap-icon://navigation-right-arrow"  text="Next" press="onNavPress" iconFirst="false" />
                 </contentRight>
             </Bar>
         </footer>

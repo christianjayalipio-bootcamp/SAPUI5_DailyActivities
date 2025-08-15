@@ -5,7 +5,7 @@
 >
     <Page
         id="page1"
-        title="{i18n>title}"
+        title="{i18n>title1}"
     >
         <footer>
             <Bar>

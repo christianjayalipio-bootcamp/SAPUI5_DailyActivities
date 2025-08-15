@@ -14,7 +14,7 @@ sap.ui.define([
         },
 
         onButton1Press: function () {
-            MessageBox.information("Button 1 was pressed!");
+            MessageBox.information("Hi! This is Christian Jay Alipio, its a pleasure to meet you.");
         }
     });
 });
