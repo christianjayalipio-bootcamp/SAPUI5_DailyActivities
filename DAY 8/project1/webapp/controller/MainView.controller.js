@@ -10,7 +10,11 @@ sap.ui.define([
 
         onNavPress: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteView2");
+            MessageBox.information("You are going to Sub Page", {
+                onClose: function () {
+                    oRouter.navTo("RouteView2");
+                }
+            });
         },
 
         onButton1Press: function () {

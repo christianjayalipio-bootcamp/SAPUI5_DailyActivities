@@ -1,16 +1,23 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], function (Controller) {
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageBox"
+], function (Controller, MessageBox) {
     "use strict";
 
     return Controller.extend("com.ui5.trng.project1.controller.View2", {
         onInit: function () {
-            // Initialization code for View2 if needed
         },
 
         onNavBack: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteMainView"); // Matches your manifest.json route name for MainView
+            MessageBox.information("You are going to Main Page", {
+                onClose: function () {
+                    oRouter.navTo("RouteMainView");
+                }
+            });
+        },
+        onButton1Press: function () {
+            MessageBox.information("Hi! This is Christian Jay Alipio, you are on the subpage right now");
         }
     });
 });

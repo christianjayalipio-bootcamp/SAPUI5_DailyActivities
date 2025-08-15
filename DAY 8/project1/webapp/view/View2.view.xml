@@ -6,13 +6,30 @@
     <Page
         id="page1"
         title="{i18n>title1}"
+        class="myBackgroundPage"
     >
+        <customHeader>
+            <Bar class="customHeader">
+                <contentLeft>
+                    <Title class="myTitle" text="Custom Header Title 1" />
+                </contentLeft>
+            </Bar>
+        </customHeader>
         <footer>
-            <Bar>
+            <Bar class="customHeader1">
+                <contentLeft>
+                    <Button
+                        icon="sap-icon://message-popup"
+                        text="Message"
+                        press="onButton1Press"
+                        type="Accept"
+                    />
+                </contentLeft>
                 <contentRight>
                     <Button
                         text="Back"
                         press="onNavBack"
+                        type="Attention"
                     />
                 </contentRight>
             </Bar>
