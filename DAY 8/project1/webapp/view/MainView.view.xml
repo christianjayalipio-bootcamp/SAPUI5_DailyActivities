@@ -9,9 +9,9 @@
         class="myBackgroundPage"
     >
         <customHeader>
-            <Bar class="customHeader">
+            <Bar class="customHeader" id="bar0">
                 <contentLeft>
-                    <Title class="myTitle" text="Custom Header Title" />
+                    <Title id="title0" class="myTitle" text="{i18n>title}" />
                 </contentLeft>
             </Bar>
         </customHeader>
@@ -19,9 +19,10 @@
         <content></content>
 
         <footer>
-            <Bar class="customFooter">
+            <Bar id="bar1" class="customFooter">
                 <contentLeft>
                     <Button
+                        id="btn0"
                         icon="sap-icon://message-popup"
                         text="Message"
                         press="onButton1Press"
@@ -30,6 +31,7 @@
                 </contentLeft>
                 <contentRight>
                     <Button
+                        id="btn1"
                         icon="sap-icon://navigation-right-arrow"
                         text="Next"
                         press="onNavPress"
