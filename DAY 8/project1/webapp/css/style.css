@@ -1,41 +1,24 @@
 /* Enter your custom styles here */
 .customHeader{
-    background-color: #0088ff !important; /* A nice blue color */
+    background-color: #0088ff !important;
     border-bottom: 2px solid #174873;
 }
-.customHeader1{
-    background-color: #ff5500 !important; /* A nice blue color */
+.customFooter{
+    background-color: #ff5500 !important;
     border-top: 2px solid #174873;
 }
 .myTitle {
-    color: white !important; /* Change this to your desired color */
-}
-.myBackgroundPage {
-    background-image: url("https://i.pinimg.com/originals/d6/58/f6/d658f6ac6ba2eebc634c9b2fda5b5155.gif") !important;
-    background-size: cover; /* This makes the image cover the entire page */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* Customizes the entire MessageBox dialog */
-/* Sets the size of the entire MessageBox dialog */
-.sapMMessageBox {
-    width: 300px !important; /* Adjust to your image's width */
-    height: 200px !important; /* Adjust to your image's height */
+    color: white !important;
 }
 
-/* Ensures the internal content section also fits the image dimensions */
-.sapMMessageBox > .sapMDialogSection {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 119, 255);
-    background-image: url("https://cdn.dribbble.com/userupload/22464658/file/original-7aa295f8086e8823c708e2b1fcfb68e1.gif") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+/* for the dialog box */
+.myCustomHeader .sapMBar{
+    background-color: #0088ff !important;
 }
-
-/* You may need to adjust the content to be readable on the background image */
-.sapMMessageBox .sapMText {
-    color: rgb(0, 0, 0) !important;
-    text-shadow: 1px 1px 2px white;
+.myCustomHeader .sapMDialogTitle {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+.myCustomHeader.sapMDialog .sapUiIcon {
+    color: #000dff !important;
 }

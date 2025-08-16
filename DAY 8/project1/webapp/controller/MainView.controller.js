@@ -11,6 +11,7 @@ sap.ui.define([
         onNavPress: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             MessageBox.information("You are going to Sub Page", {
+                styleClass: "myCustomHeader",
                 onClose: function () {
                     oRouter.navTo("RouteView2");
                 }
@@ -18,7 +19,11 @@ sap.ui.define([
         },
 
         onButton1Press: function () {
-            MessageBox.information("Hi! This is Christian Jay Alipio, its a pleasure to meet you.");
+            MessageBox.information("Hi! This is Christian Jay Alipio, its a pleasure to meet you.",
+                {
+                    styleClass: "myCustomHeader"
+                }
+            );
         }
     });
 });

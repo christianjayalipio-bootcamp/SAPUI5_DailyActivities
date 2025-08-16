@@ -19,7 +19,7 @@
         <content></content>
 
         <footer>
-            <Bar class="customHeader1">
+            <Bar class="customFooter">
                 <contentLeft>
                     <Button
                         icon="sap-icon://message-popup"

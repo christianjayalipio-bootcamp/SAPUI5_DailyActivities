@@ -11,13 +11,19 @@ sap.ui.define([
         onNavBack: function () {
             var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
             MessageBox.information("You are going to Main Page", {
+                styleClass: "myCustomHeader",
                 onClose: function () {
                     oRouter.navTo("RouteMainView");
                 }
             });
         },
         onButton1Press: function () {
-            MessageBox.information("Hi! This is Christian Jay Alipio, you are on the subpage right now");
+            MessageBox.information(
+                "Hi! This is Christian Jay Alipio, you are on the subpage right now",
+                {
+                    styleClass: "myCustomHeader"
+                }
+            );
         }
     });
 });
